@@ -1,0 +1,20 @@
+# This file contains machine-specific properties for the Gradle build toolkit.
+# For more information about this file, see:
+# https://developer.android.com/studio/build#properties-files
+
+# Location of the Android SDK. This is only used by Gradle.
+# For customization when using a Version Control System, please read the
+# header note.
+sdk.dir=C\:\\Users\\YourUsername\\AppData\\Local\\Android\\Sdk
+
+# API Configuration (Override gradle.properties values)
+# Uncomment and modify these lines to override default API settings
+# API_BASE_URL=https://your-production-api.com/api/
+# API_REST_API=YourApiName
+# API_PLATFORM=1
+# API_AUTH_TOKEN=your_secret_token_here
+
+# Different environments
+# API_BASE_URL_DEV=https://dev-api.example.com/
+# API_BASE_URL_STAGING=https://staging-api.example.com/
+# API_BASE_URL_PROD=https://api.example.com/

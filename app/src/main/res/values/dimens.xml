@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Grid spacing for RecyclerView items -->
+    <dimen name="grid_spacing">8dp</dimen>
+    
+    <!-- Menu item height for RecyclerView calculation -->
+    <dimen name="menu_item_height">120dp</dimen>
+</resources>
