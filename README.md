@@ -111,7 +111,7 @@ The task was to create a navigation drawer application with the following specif
 
 ### **Prerequisites**
 - Android Studio Arctic Fox or later
-- Java 11+
+- Java 11 (JDK 11)
 - Android SDK API 24+
 
 ### **Setup Instructions**
