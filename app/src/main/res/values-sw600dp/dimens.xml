@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Tablet dimensions (600dp+ width) -->
     <dimen name="grid_spacing">12dp</dimen>
     <dimen name="menu_item_height">140dp</dimen>
     <dimen name="drawer_width">400dp</dimen>
@@ -8,4 +7,5 @@
     <dimen name="header_height">64dp</dimen>
     <dimen name="section_padding">24dp</dimen>
     <dimen name="item_padding">20dp</dimen>
+    <dimen name="card_corner_radius">46dp</dimen>
 </resources>

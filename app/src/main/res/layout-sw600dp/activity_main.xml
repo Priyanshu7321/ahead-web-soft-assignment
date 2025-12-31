@@ -95,88 +95,76 @@
             android:orientation="vertical">
 
             <!-- Header Section -->
-            <androidx.constraintlayout.widget.ConstraintLayout
+            <LinearLayout
                 android:id="@+id/nav_header"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="@dimen/section_padding"
-                android:gravity="center_vertical">
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@android:color/white">
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:text="Menu"
                     android:textColor="@android:color/black"
                     android:textSize="24sp"
                     android:textStyle="bold"
-                    android:layout_marginLeft="20dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    android:layout_marginStart="20dp" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
                     android:orientation="horizontal"
-                    android:layout_marginEnd="20dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent">
+                    android:layout_marginEnd="20dp">
                     
-                    <com.google.android.material.card.MaterialCardView
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/dark_grey_background"
-                        app:cardCornerRadius="30dp">
-                        <LinearLayout
+                        android:background="@drawable/dark_grey_rounded"
+                        android:padding="12dp"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginEnd="6dp"
+                            android:tint="@color/black"
+                            android:src="@drawable/ic_globe" />
+
+                        <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:padding="12dp"
-                            android:orientation="horizontal"
-                            android:gravity="center_vertical">
-                            <ImageView
-                                android:layout_width="24dp"
-                                android:layout_height="24dp"
-                                android:layout_marginEnd="6dp"
-                                android:tint="@color/black"
-                                android:src="@drawable/ic_globe" />
+                            android:layout_marginEnd="10dp"
+                            android:text="IND-INR-EN"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginEnd="10dp"
-                                android:text="IND-INR-EN"
-                                android:textColor="@color/black"
-                                android:textSize="14sp" />
-
-                            <ImageView
-                                android:layout_width="28dp"
-                                android:layout_height="28dp"
-                                android:tint="@color/black"
-                                android:src="@drawable/ic_dropdown" />
-                        </LinearLayout>
-                    </com.google.android.material.card.MaterialCardView>
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:tint="@color/black"
+                            android:src="@drawable/ic_dropdown" />
+                    </LinearLayout>
                     
-                    <com.google.android.material.card.MaterialCardView
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="12dp"
-                        app:cardCornerRadius="30dp">
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:padding="12dp">
-                            <ImageView
-                                android:layout_width="28dp"
-                                android:layout_height="28dp"
-                                android:tint="@color/black"
-                                android:src="@drawable/ic_search" />
-                        </LinearLayout>
-                    </com.google.android.material.card.MaterialCardView>
+                        android:layout_marginStart="12dp"
+                        android:background="@drawable/menu_item_background"
+                        android:padding="12dp">
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:tint="@color/black"
+                            android:src="@drawable/ic_search" />
+                    </LinearLayout>
                 </LinearLayout>
 
-            </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
