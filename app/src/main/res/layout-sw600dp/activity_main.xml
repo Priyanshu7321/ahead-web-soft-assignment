@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res/auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
@@ -132,7 +132,7 @@
                             android:layout_width="24dp"
                             android:layout_height="24dp"
                             android:layout_marginEnd="6dp"
-                            android:tint="@color/black"
+                            android:backgroundTint="@color/black"
                             android:src="@drawable/ic_globe" />
 
                         <TextView
@@ -146,7 +146,7 @@
                         <ImageView
                             android:layout_width="28dp"
                             android:layout_height="28dp"
-                            android:tint="@color/black"
+                            android:backgroundTint="@color/black"
                             android:src="@drawable/ic_dropdown" />
                     </LinearLayout>
                     
@@ -159,7 +159,7 @@
                         <ImageView
                             android:layout_width="28dp"
                             android:layout_height="28dp"
-                            android:tint="@color/black"
+                            android:backgroundTint="@color/black"
                             android:src="@drawable/ic_search" />
                     </LinearLayout>
                 </LinearLayout>

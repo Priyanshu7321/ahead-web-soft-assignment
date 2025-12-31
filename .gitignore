@@ -23,3 +23,8 @@ local.properties
 # API Keys and secrets (if using different approaches)
 keystore.properties
 secrets.properties
+
+# Keystore files (NEVER commit these to version control)
+*.jks
+*.keystore
+app-release-key.jks
