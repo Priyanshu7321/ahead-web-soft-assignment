@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Grid spacing for RecyclerView items -->
+    <!-- Default phone dimensions -->
     <dimen name="grid_spacing">8dp</dimen>
-    
-    <!-- Menu item height for RecyclerView calculation -->
     <dimen name="menu_item_height">120dp</dimen>
+    <dimen name="drawer_width">320dp</dimen>
+    <dimen name="profile_image_size">60dp</dimen>
+    <dimen name="header_height">56dp</dimen>
+    <dimen name="section_padding">16dp</dimen>
+    <dimen name="item_padding">16dp</dimen>
 </resources>

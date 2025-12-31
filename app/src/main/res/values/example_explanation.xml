@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 
+    EXAMPLE: How @dimen/section_padding works
+    
+    When you write: android:padding="@dimen/section_padding"
+    
+    Android automatically selects:
+    
+    📱 Phone (< 600dp):     section_padding = 16dp (from values/)
+    📱 Tablet (600-719dp):  section_padding = 24dp (from values-sw600dp/)  
+    📱 Large Tablet (720dp+): section_padding = 32dp (from values-sw720dp/)
+    
+    The SAME layout file works on ALL devices!
+    No code changes needed - Android handles it automatically.
+    -->
+</resources>

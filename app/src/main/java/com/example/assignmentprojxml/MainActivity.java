@@ -160,24 +160,27 @@ public class MainActivity extends AppCompatActivity {
         // Initialize the display with first 4 items
         updateAppsDisplay();
         
+        // Determine grid columns based on screen size
+        int gridColumns = getGridColumns();
+        
         // Apps RecyclerView
         appsAdapter = new MenuItemAdapter(displayedAppsItems);
-        GridLayoutManager appsLayoutManager = new GridLayoutManager(this, 2);
+        GridLayoutManager appsLayoutManager = new GridLayoutManager(this, gridColumns);
         appsRecyclerView.setLayoutManager(appsLayoutManager);
         appsRecyclerView.setAdapter(appsAdapter);
         
         // Add spacing between grid items with edge spacing
         int spacing = getResources().getDimensionPixelSize(R.dimen.grid_spacing);
-        appsRecyclerView.addItemDecoration(new GridSpacingItemDecoration(2, spacing, true));
+        appsRecyclerView.addItemDecoration(new GridSpacingItemDecoration(gridColumns, spacing, true));
         
         // Help RecyclerView
         helpAdapter = new MenuItemAdapter(new ArrayList<>());
-        GridLayoutManager helpLayoutManager = new GridLayoutManager(this, 2);
+        GridLayoutManager helpLayoutManager = new GridLayoutManager(this, gridColumns);
         helpRecyclerView.setLayoutManager(helpLayoutManager);
         helpRecyclerView.setAdapter(helpAdapter);
         
         // Add spacing between grid items
-        helpRecyclerView.addItemDecoration(new GridSpacingItemDecoration(2, spacing, false));
+        helpRecyclerView.addItemDecoration(new GridSpacingItemDecoration(gridColumns, spacing, false));
         
         // Set click listeners
         appsAdapter.setOnItemClickListener(item -> {
@@ -187,6 +190,13 @@ public class MainActivity extends AppCompatActivity {
         helpAdapter.setOnItemClickListener(item -> {
             Toast.makeText(this, "Clicked: " + item.getTitle(), Toast.LENGTH_SHORT).show();
         });
+    }
+    
+    /**
+     * Determine number of grid columns based on screen width
+     */
+    private int getGridColumns() {
+        return getResources().getInteger(R.integer.grid_columns);
     }
     
     private void addTestData() {
